@@ -40,7 +40,7 @@ mutalk.OnMessage += (_, eventArgs) =>
 {
   if (eventArgs.Topic == "test123") // double check topic name due to possible hash collisions
   {
-	  Console.WriteLine(Encoding.UTF8.GetString(eventArgs.Message));
+	Console.WriteLine(Encoding.UTF8.GetString(eventArgs.Message));
   }
 };
 
